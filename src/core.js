@@ -68,8 +68,6 @@ switch(myArgs[0]){
 var net = require('net');
 
 
-
-
 if(myArgs.length == 0){
     console.log('please enter the arguments. arg1 -> board type, arg2 -> port');
 }

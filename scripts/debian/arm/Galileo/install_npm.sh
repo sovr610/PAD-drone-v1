@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ../../
+cd ../../../../
 
 npm i johnny-five
 npm install galileo-io
