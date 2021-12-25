@@ -16,15 +16,10 @@ module.exports = class odyssey{
             shell.exec('cd /sys/class/gpio');
             shell.exec('echo ' + pin + ' > export');
             shell.exec('cd gpio' + pin);
+            shell.exec('echo ' + inOut + ' > direction');
+            shell.exec('echo ' + value + ' > value');
             
         }
 
     }
-
-    sudo -i
-cd /sys/class/gpio
-echo 337 > export
-cd gpio337
-echo "out" > direction
-echo 1 > value
 }
